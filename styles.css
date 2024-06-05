@@ -1,8 +1,30 @@
-/*
+/*Styling*/
+.text-light {
+	color: gray;
+}
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+.tag__title {
+	margin-bottom: 8px;
+}
 
-If your plugin does not need CSS, delete this file.
+.tag__title--light {
+	font-size: 16px;
+	font-weight: 400;
+}
 
-*/
+.tag__content--bottom {
+	border-bottom: 1px solid lightgray;
+}
+
+.tag__content--top {
+	border-top: 1px solid lightgray;
+}
+
+/*need to account for dark theme*/
+.is-flashing {
+	transition: all 0.25s ease;
+	background-color: rgb(255, 208, 0) !important;
+	mix-blend-mode: lighten;
+	opacity: 40;
+	border-radius: var(--radius-s);
+}
